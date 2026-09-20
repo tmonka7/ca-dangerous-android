@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <string name="app_name">REDLINE</string>
+    <string name="app_name_full">REDLINE DIAGNOSTICS</string>
+    <string name="splash_tagline">SMART DIAGNOSTIC SOLUTIONS FOR A HEALTHIER DRIVE</string>
+    <string name="splash_initializing">Initializing…</string>
+    <string name="version_format" translatable="false">v%1$s</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_diagnose">Diagnose</string>
+    <string name="nav_live_data">Live Data</string>
+    <string name="nav_vehicles">Vehicles</string>
+    <string name="nav_more">More</string>
+
+    <!-- Connection state -->
+    <string name="status_connected">Connected</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_connecting">Connecting…</string>
+
+    <!-- Home -->
+    <string name="vehicle_health">Vehicle Health</string>
+    <string name="full_system_scan">Full System Scan</string>
+    <string name="label_dtc">DTC</string>
+    <string name="label_battery">Battery</string>
+    <string name="label_coolant">Coolant</string>
+    <string name="label_speed">Speed</string>
+    <string name="label_rpm">RPM</string>
+    <string name="state_ready">READY</string>
+    <string name="not_connected_hint">Connect an adapter to start a scan</string>
+
+    <!-- Units -->
+    <string name="unit_kmh" translatable="false">km/h</string>
+    <string name="unit_rpm" translatable="false">rpm</string>
+    <string name="unit_celsius" translatable="false">°C</string>
+    <string name="unit_volt" translatable="false">V</string>
+    <string name="unit_percent" translatable="false" formatted="false">%</string>
+
+    <!-- Vehicle systems -->
+    <string name="system_engine">Engine</string>
+    <string name="system_transmission">Transmission</string>
+    <string name="system_abs">ABS</string>
+    <string name="system_srs">SRS</string>
+    <string name="system_body">Body</string>
+    <string name="system_tpms">TPMS</string>
+    <string name="system_hvac">HVAC</string>
+    <string name="system_gateway">Gateway</string>
+
+    <!-- System status -->
+    <string name="status_good">Good</string>
+    <string name="status_warning">Warning</string>
+    <string name="status_fault">Fault</string>
+    <string name="status_pending">Pending</string>
+    <string name="issues_found_format">%1$d issues found</string>
+
+    <!-- Connect Device -->
+    <string name="title_connect_device">Connect Device</string>
+    <string name="connect_subtitle">Choose your connection method</string>
+    <string name="transport_bt">Bluetooth</string>
+    <string name="transport_ble">Bluetooth LE</string>
+    <string name="transport_wifi">Wi-Fi</string>
+    <string name="transport_usb">USB OTG</string>
+    <string name="transport_ethernet">Ethernet</string>
+    <string name="transport_j2534">J2534</string>
+    <string name="available_devices">Available Devices</string>
+    <string name="devices_found_format">%1$d devices found</string>
+    <string name="action_search_devices">Search Devices</string>
+    <string name="action_stop_search">Stop</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="device_available">Available</string>
+    <string name="scanning_for_devices">Scanning for devices…</string>
+    <string name="browse_adapter_catalog">Browse supported adapters</string>
+    <string name="connected_to_format">Connected to %1$s</string>
+
+    <!-- Device List -->
+    <string name="title_device_list">Device List</string>
+    <string name="supported_adapters">Supported Adapters</string>
+    <string name="filter_all">All</string>
+    <string name="filter_obd2">OBD-II</string>
+    <string name="filter_heavy_duty">Heavy Duty</string>
+    <string name="filter_j2534">J2534</string>
+    <string name="support_supported">Supported</string>
+    <string name="support_limited">Limited</string>
+    <string name="support_unsupported">Not supported</string>
+    <string name="label_transports">Transports</string>
+    <string name="label_protocols">Protocols</string>
+    <string name="label_connectors">Connectors</string>
+    <string name="capability_disclaimer">Capabilities differ between models of the same brand. Check the list against your exact adapter.</string>
+    <string name="action_close">Close</string>
+
+    <!-- Connector Selection -->
+    <string name="title_connector_selection">Connector Selection</string>
+    <string name="connector_group_passenger">Passenger Vehicle</string>
+    <string name="connector_group_commercial">Commercial / Heavy Duty</string>
+    <string name="connector_group_manufacturer">Manufacturer Adapters</string>
+    <string name="pin_count_format">%1$d pin</string>
+    <string name="connector_selected_format">Connector set to %1$s</string>
+
+    <!-- Vehicle Selection -->
+    <string name="title_vehicle_selection">Vehicle Selection</string>
+    <string name="search_make_model">Search make / model</string>
+    <string name="recent_vehicles">Recent Vehicles</string>
+    <string name="select_vehicle">Select Vehicle</string>
+    <string name="field_make">Make</string>
+    <string name="field_model">Model</string>
+    <string name="field_year">Year</string>
+    <string name="field_engine">Engine</string>
+    <string name="action_auto_vin">Auto VIN</string>
+    <string name="action_manual_vin">Manual VIN Entry</string>
+    <string name="select_make_first">Select a make first</string>
+    <string name="vehicle_selected_format">%1$s selected</string>
+    <string name="last_scan_format">Last scan: %1$s</string>
+
+    <!-- VIN Scanner -->
+    <string name="title_vin_scanner">VIN Scanner</string>
+    <string name="vin_scanning">Reading…</string>
+    <string name="vin_position_hint">Position the VIN inside the frame</string>
+    <string name="action_scan">Scan</string>
+    <string name="vin_camera_placeholder">Camera capture is wired up in a later phase. Use manual entry for now.</string>
+    <string name="vin_dialog_title">Enter VIN</string>
+    <string name="vin_hint">17-character VIN</string>
+    <string name="vin_error_length">A VIN must be exactly 17 characters</string>
+    <string name="vin_error_chars">A VIN cannot contain the letters I, O or Q</string>
+    <string name="vin_error_checksum">Check digit does not match</string>
+    <string name="vin_accepted_format">VIN accepted: %1$s</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+
+    <!-- Placeholders for screens in later phases -->
+    <string name="placeholder_phase_format">Planned for phase %1$d</string>
+    <string name="placeholder_diagnose_title">Full System Scan</string>
+    <string name="placeholder_diagnose_desc">Module discovery, DTC reading and the health report arrive in phase 2.</string>
+    <string name="placeholder_live_title">Live Data</string>
+    <string name="placeholder_live_desc">Gauges, graphs and PID recording arrive in phase 2.</string>
+    <string name="placeholder_more_title">More</string>
+    <string name="placeholder_more_desc">Reports, history, service functions and settings arrive in phase 3.</string>
+
+    <!-- Accessibility -->
+    <string name="cd_back">Back</string>
+    <string name="cd_vehicle">Vehicle</string>
+    <string name="cd_signal_strength">Signal strength</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- REDLINE DIAGNOSTICS palette. Surfaces step up in lightness; the red
+         accent is reserved for the primary action, live telemetry and faults. -->
+    <color name="redline_background">#FF08090B</color>
+    <color name="redline_surface">#FF111317</color>
+    <color name="redline_card">#FF171A1F</color>
+    <color name="redline_card_raised">#FF1D2128</color>
+    <color name="redline_border">#FF262A31</color>
+    <color name="redline_border_strong">#FF343A44</color>
+
+    <color name="redline_red">#FFE11D26</color>
+    <color name="redline_red_bright">#FFFF3B42</color>
+    <color name="redline_red_dark">#FF8C1116</color>
+    <color name="redline_red_dim">#33E11D26</color>
+    <color name="redline_red_faint">#1AE11D26</color>
+
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FF9BA1AA</color>
+    <color name="text_tertiary">#FF6B7280</color>
+    <color name="text_disabled">#FF4A505A</color>
+
+    <color name="state_good">#FF2FBF71</color>
+    <color name="state_good_dim">#1A2FBF71</color>
+    <color name="state_warning">#FFF0A32E</color>
+    <color name="state_warning_dim">#1AF0A32E</color>
+    <color name="state_fault">#FFE11D26</color>
+    <color name="state_fault_dim">#1AE11D26</color>
+    <color name="state_pending">#FF4A505A</color>
+
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

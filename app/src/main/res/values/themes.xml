@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Redline" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/redline_red</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorPrimaryContainer">@color/redline_red_dark</item>
+        <item name="colorOnPrimaryContainer">@color/text_primary</item>
+        <item name="colorSecondary">@color/redline_red_bright</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+
+        <item name="android:colorBackground">@color/redline_background</item>
+        <item name="colorSurface">@color/redline_surface</item>
+        <item name="colorSurfaceVariant">@color/redline_card</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutline">@color/redline_border</item>
+        <item name="colorError">@color/state_fault</item>
+
+        <item name="android:statusBarColor">@color/redline_background</item>
+        <item name="android:navigationBarColor">@color/redline_surface</item>
+        <item name="android:windowBackground">@color/redline_background</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_tertiary</item>
+    </style>
+
+    <style name="Theme.Redline.Splash">
+        <item name="android:windowBackground">@color/redline_background</item>
+        <item name="android:navigationBarColor">@color/redline_background</item>
+    </style>
+
+    <style name="Text.Display" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_display</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Text.Title" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.Subtitle" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_subtitle</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.Body" parent="">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_body</item>
+    </style>
+
+    <style name="Text.Caption" parent="">
+        <item name="android:textColor">@color/text_tertiary</item>
+        <item name="android:textSize">@dimen/text_caption</item>
+    </style>
+
+    <style name="Text.SectionHeader" parent="">
+        <item name="android:textColor">@color/text_tertiary</item>
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Card" parent="">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">@dimen/card_padding</item>
+    </style>
+
+    <style name="Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="backgroundTint">@color/redline_red</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_subtitle</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="cornerRadius">@dimen/card_radius_small</item>
+    </style>
+
+    <style name="Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="strokeColor">@color/redline_border_strong</item>
+        <item name="cornerRadius">@dimen/card_radius_small</item>
+    </style>
+
+    <style name="Widget.Redline.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/redline_surface</item>
+        <item name="itemIconTint">@color/nav_item_tint</item>
+        <item name="itemTextColor">@color/nav_item_tint</item>
+        <item name="itemActiveIndicatorStyle">@null</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="Widget.Redline.Dropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/redline_border_strong</item>
+        <item name="boxBackgroundColor">@color/redline_card</item>
+        <item name="boxCornerRadiusTopStart">@dimen/card_radius_small</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/card_radius_small</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/card_radius_small</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/card_radius_small</item>
+    </style>
+
+    <style name="Widget.Redline.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="chipStrokeColor">@color/redline_border</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipIconVisible">false</item>
+        <item name="checkedIconVisible">false</item>
+    </style>
+</resources>

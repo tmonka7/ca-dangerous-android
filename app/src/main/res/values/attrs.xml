@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GaugeView">
+        <attr name="gaugeMax" format="float" />
+        <attr name="gaugeValue" format="float" />
+        <attr name="gaugeUnit" format="string" />
+        <attr name="gaugeLabel" format="string" />
+        <attr name="gaugeDecimals" format="integer" />
+        <attr name="gaugeTrackColor" format="color" />
+        <attr name="gaugeProgressColor" format="color" />
+        <attr name="gaugeTicks" format="boolean" />
+        <attr name="gaugeThickness" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SignalBarsView">
+        <attr name="signalLevel" format="integer" />
+        <attr name="signalBarCount" format="integer" />
+        <attr name="signalActiveColor" format="color" />
+        <attr name="signalInactiveColor" format="color" />
+    </declare-styleable>
+</resources>

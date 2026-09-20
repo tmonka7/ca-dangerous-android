@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <string name="app_name">REDLINE</string>
+    <string name="app_name_full">REDLINE DIAGNOSTICS</string>
+    <string name="splash_tagline">快適なドライブのためのスマート診断</string>
+    <string name="splash_initializing">起動中…</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">ホーム</string>
+    <string name="nav_diagnose">診断</string>
+    <string name="nav_live_data">ライブデータ</string>
+    <string name="nav_vehicles">車両</string>
+    <string name="nav_more">その他</string>
+
+    <!-- Connection state -->
+    <string name="status_connected">接続済み</string>
+    <string name="status_disconnected">未接続</string>
+    <string name="status_connecting">接続中…</string>
+
+    <!-- Home -->
+    <string name="vehicle_health">車両状態</string>
+    <string name="full_system_scan">フルシステム診断</string>
+    <string name="label_dtc">故障コード</string>
+    <string name="label_battery">バッテリー</string>
+    <string name="label_coolant">冷却水温</string>
+    <string name="label_speed">車速</string>
+    <string name="label_rpm">エンジン回転数</string>
+    <string name="state_ready">READY</string>
+    <string name="not_connected_hint">アダプターを接続すると診断を開始できます</string>
+
+    <!-- Vehicle systems -->
+    <string name="system_engine">エンジン</string>
+    <string name="system_transmission">トランスミッション</string>
+    <string name="system_abs">ABS</string>
+    <string name="system_srs">SRS</string>
+    <string name="system_body">ボディ</string>
+    <string name="system_tpms">TPMS</string>
+    <string name="system_hvac">エアコン</string>
+    <string name="system_gateway">ゲートウェイ</string>
+
+    <!-- System status -->
+    <string name="status_good">良好</string>
+    <string name="status_warning">警告</string>
+    <string name="status_fault">故障</string>
+    <string name="status_pending">未実施</string>
+    <string name="issues_found_format">%1$d件の異常</string>
+
+    <!-- Connect Device -->
+    <string name="title_connect_device">デバイス接続</string>
+    <string name="connect_subtitle">接続方法を選択してください</string>
+    <string name="transport_bt">Bluetooth</string>
+    <string name="transport_ble">Bluetooth LE</string>
+    <string name="transport_wifi">Wi-Fi</string>
+    <string name="transport_usb">USB OTG</string>
+    <string name="transport_ethernet">イーサネット</string>
+    <string name="transport_j2534">J2534</string>
+    <string name="available_devices">検出されたデバイス</string>
+    <string name="devices_found_format">%1$d台のデバイス</string>
+    <string name="action_search_devices">デバイスを検索</string>
+    <string name="action_stop_search">停止</string>
+    <string name="action_refresh">再検索</string>
+    <string name="action_connect">接続</string>
+    <string name="action_disconnect">切断</string>
+    <string name="device_available">利用可能</string>
+    <string name="scanning_for_devices">デバイスを検索中…</string>
+    <string name="browse_adapter_catalog">対応アダプター一覧</string>
+    <string name="connected_to_format">%1$s に接続しました</string>
+
+    <!-- Device List -->
+    <string name="title_device_list">デバイス一覧</string>
+    <string name="supported_adapters">対応アダプター</string>
+    <string name="filter_all">すべて</string>
+    <string name="filter_obd2">OBD-II</string>
+    <string name="filter_heavy_duty">大型車</string>
+    <string name="filter_j2534">J2534</string>
+    <string name="support_supported">対応</string>
+    <string name="support_limited">一部対応</string>
+    <string name="support_unsupported">非対応</string>
+    <string name="label_transports">通信方式</string>
+    <string name="label_protocols">プロトコル</string>
+    <string name="label_connectors">コネクター</string>
+    <string name="capability_disclaimer">同じブランドでも機種により対応内容が異なります。お使いのアダプターの仕様をご確認ください。</string>
+    <string name="action_close">閉じる</string>
+
+    <!-- Connector Selection -->
+    <string name="title_connector_selection">コネクター選択</string>
+    <string name="connector_group_passenger">乗用車</string>
+    <string name="connector_group_commercial">商用車・大型車</string>
+    <string name="connector_group_manufacturer">メーカー専用アダプター</string>
+    <string name="pin_count_format">%1$dピン</string>
+    <string name="connector_selected_format">コネクターを %1$s に設定しました</string>
+
+    <!-- Vehicle Selection -->
+    <string name="title_vehicle_selection">車両選択</string>
+    <string name="search_make_model">メーカー・車種を検索</string>
+    <string name="recent_vehicles">最近の車両</string>
+    <string name="select_vehicle">車両を選択</string>
+    <string name="field_make">メーカー</string>
+    <string name="field_model">車種</string>
+    <string name="field_year">年式</string>
+    <string name="field_engine">エンジン</string>
+    <string name="action_auto_vin">VIN自動取得</string>
+    <string name="action_manual_vin">VINを手動入力</string>
+    <string name="select_make_first">先にメーカーを選択してください</string>
+    <string name="vehicle_selected_format">%1$s を選択しました</string>
+    <string name="last_scan_format">前回の診断: %1$s</string>
+
+    <!-- VIN Scanner -->
+    <string name="title_vin_scanner">VINスキャン</string>
+    <string name="vin_scanning">読み取り中…</string>
+    <string name="vin_position_hint">枠内にVINを合わせてください</string>
+    <string name="action_scan">スキャン</string>
+    <string name="vin_camera_placeholder">カメラ読み取りは次のフェーズで実装します。現在は手動入力をご利用ください。</string>
+    <string name="vin_dialog_title">VIN入力</string>
+    <string name="vin_hint">17桁のVIN</string>
+    <string name="vin_error_length">VINは17文字で入力してください</string>
+    <string name="vin_error_chars">VINに I、O、Q は使用できません</string>
+    <string name="vin_error_checksum">チェックデジットが一致しません</string>
+    <string name="vin_accepted_format">VINを登録しました: %1$s</string>
+    <string name="action_cancel">キャンセル</string>
+    <string name="action_ok">OK</string>
+
+    <!-- Placeholders -->
+    <string name="placeholder_phase_format">フェーズ %1$d で実装予定</string>
+    <string name="placeholder_diagnose_title">フルシステム診断</string>
+    <string name="placeholder_diagnose_desc">モジュール検出、故障コード読み取り、診断レポートはフェーズ2で実装します。</string>
+    <string name="placeholder_live_title">ライブデータ</string>
+    <string name="placeholder_live_desc">メーター、グラフ、PID記録はフェーズ2で実装します。</string>
+    <string name="placeholder_more_title">その他</string>
+    <string name="placeholder_more_desc">レポート、履歴、サービス機能、設定はフェーズ3で実装します。</string>
+
+    <!-- Accessibility -->
+    <string name="cd_back">戻る</string>
+    <string name="cd_vehicle">車両</string>
+    <string name="cd_signal_strength">電波強度</string>
+</resources>

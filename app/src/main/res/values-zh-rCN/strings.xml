@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <string name="app_name">REDLINE</string>
+    <string name="app_name_full">REDLINE DIAGNOSTICS</string>
+    <string name="splash_tagline">智能诊断 让驾驶更健康</string>
+    <string name="splash_initializing">正在初始化…</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">首页</string>
+    <string name="nav_diagnose">诊断</string>
+    <string name="nav_live_data">实时数据</string>
+    <string name="nav_vehicles">车辆</string>
+    <string name="nav_more">更多</string>
+
+    <!-- Connection state -->
+    <string name="status_connected">已连接</string>
+    <string name="status_disconnected">未连接</string>
+    <string name="status_connecting">连接中…</string>
+
+    <!-- Home -->
+    <string name="vehicle_health">车辆健康</string>
+    <string name="full_system_scan">全车系统扫描</string>
+    <string name="label_dtc">故障码</string>
+    <string name="label_battery">电瓶电压</string>
+    <string name="label_coolant">冷却液温度</string>
+    <string name="label_speed">车速</string>
+    <string name="label_rpm">发动机转速</string>
+    <string name="state_ready">READY</string>
+    <string name="not_connected_hint">连接适配器后即可开始扫描</string>
+
+    <!-- Vehicle systems -->
+    <string name="system_engine">发动机</string>
+    <string name="system_transmission">变速箱</string>
+    <string name="system_abs">ABS</string>
+    <string name="system_srs">安全气囊</string>
+    <string name="system_body">车身</string>
+    <string name="system_tpms">胎压监测</string>
+    <string name="system_hvac">空调</string>
+    <string name="system_gateway">网关</string>
+
+    <!-- System status -->
+    <string name="status_good">正常</string>
+    <string name="status_warning">警告</string>
+    <string name="status_fault">故障</string>
+    <string name="status_pending">未扫描</string>
+    <string name="issues_found_format">发现 %1$d 项问题</string>
+
+    <!-- Connect Device -->
+    <string name="title_connect_device">连接设备</string>
+    <string name="connect_subtitle">请选择连接方式</string>
+    <string name="transport_bt">蓝牙</string>
+    <string name="transport_ble">低功耗蓝牙</string>
+    <string name="transport_wifi">Wi-Fi</string>
+    <string name="transport_usb">USB OTG</string>
+    <string name="transport_ethernet">以太网</string>
+    <string name="transport_j2534">J2534</string>
+    <string name="available_devices">可用设备</string>
+    <string name="devices_found_format">发现 %1$d 台设备</string>
+    <string name="action_search_devices">搜索设备</string>
+    <string name="action_stop_search">停止</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_connect">连接</string>
+    <string name="action_disconnect">断开</string>
+    <string name="device_available">可连接</string>
+    <string name="scanning_for_devices">正在搜索设备…</string>
+    <string name="browse_adapter_catalog">查看支持的适配器</string>
+    <string name="connected_to_format">已连接 %1$s</string>
+
+    <!-- Device List -->
+    <string name="title_device_list">设备列表</string>
+    <string name="supported_adapters">支持的适配器</string>
+    <string name="filter_all">全部</string>
+    <string name="filter_obd2">OBD-II</string>
+    <string name="filter_heavy_duty">重型车</string>
+    <string name="filter_j2534">J2534</string>
+    <string name="support_supported">支持</string>
+    <string name="support_limited">部分支持</string>
+    <string name="support_unsupported">不支持</string>
+    <string name="label_transports">通信方式</string>
+    <string name="label_protocols">协议</string>
+    <string name="label_connectors">接口</string>
+    <string name="capability_disclaimer">同一品牌不同型号的能力并不相同，请以您实际使用的适配器规格为准。</string>
+    <string name="action_close">关闭</string>
+
+    <!-- Connector Selection -->
+    <string name="title_connector_selection">接口选择</string>
+    <string name="connector_group_passenger">乘用车</string>
+    <string name="connector_group_commercial">商用车 / 重型车</string>
+    <string name="connector_group_manufacturer">厂家专用转接头</string>
+    <string name="pin_count_format">%1$d 针</string>
+    <string name="connector_selected_format">接口已设置为 %1$s</string>
+
+    <!-- Vehicle Selection -->
+    <string name="title_vehicle_selection">车辆选择</string>
+    <string name="search_make_model">搜索品牌 / 车型</string>
+    <string name="recent_vehicles">最近车辆</string>
+    <string name="select_vehicle">选择车辆</string>
+    <string name="field_make">品牌</string>
+    <string name="field_model">车型</string>
+    <string name="field_year">年款</string>
+    <string name="field_engine">发动机</string>
+    <string name="action_auto_vin">自动识别VIN</string>
+    <string name="action_manual_vin">手动输入VIN</string>
+    <string name="select_make_first">请先选择品牌</string>
+    <string name="vehicle_selected_format">已选择 %1$s</string>
+    <string name="last_scan_format">上次扫描：%1$s</string>
+
+    <!-- VIN Scanner -->
+    <string name="title_vin_scanner">VIN 扫描</string>
+    <string name="vin_scanning">识别中…</string>
+    <string name="vin_position_hint">请将VIN置于取景框内</string>
+    <string name="action_scan">扫描</string>
+    <string name="vin_camera_placeholder">相机识别将在后续阶段实现，当前请使用手动输入。</string>
+    <string name="vin_dialog_title">输入VIN</string>
+    <string name="vin_hint">17位VIN码</string>
+    <string name="vin_error_length">VIN必须为17位字符</string>
+    <string name="vin_error_chars">VIN中不能包含字母 I、O、Q</string>
+    <string name="vin_error_checksum">校验位不匹配</string>
+    <string name="vin_accepted_format">VIN已确认：%1$s</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_ok">确定</string>
+
+    <!-- Placeholders -->
+    <string name="placeholder_phase_format">计划在第 %1$d 阶段实现</string>
+    <string name="placeholder_diagnose_title">全车系统扫描</string>
+    <string name="placeholder_diagnose_desc">模块发现、故障码读取与诊断报告将在第2阶段实现。</string>
+    <string name="placeholder_live_title">实时数据</string>
+    <string name="placeholder_live_desc">仪表、曲线与PID记录将在第2阶段实现。</string>
+    <string name="placeholder_more_title">更多</string>
+    <string name="placeholder_more_desc">报告、历史记录、维保功能与设置将在第3阶段实现。</string>
+
+    <!-- Accessibility -->
+    <string name="cd_back">返回</string>
+    <string name="cd_vehicle">车辆</string>
+    <string name="cd_signal_strength">信号强度</string>
+</resources>
