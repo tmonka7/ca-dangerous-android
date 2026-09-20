@@ -134,4 +134,100 @@
     <string name="cd_back">戻る</string>
     <string name="cd_vehicle">車両</string>
     <string name="cd_signal_strength">電波強度</string>
+    <!-- Trouble code status -->
+    <string name="dtc_status_stored">記憶</string>
+    <string name="dtc_status_pending">保留</string>
+    <string name="dtc_status_permanent">恒久</string>
+
+    <!-- Trouble code structure -->
+    <string name="dtc_system_powertrain">パワートレイン</string>
+    <string name="dtc_system_chassis">シャシー</string>
+    <string name="dtc_system_body">ボディ</string>
+    <string name="dtc_system_network">ネットワーク</string>
+    <string name="dtc_kind_generic">共通コード (SAE)</string>
+    <string name="dtc_kind_manufacturer">メーカー固有コード</string>
+    <string name="dtc_sub_fuel_air">燃料・空気計量系</string>
+    <string name="dtc_sub_injector">インジェクター回路</string>
+    <string name="dtc_sub_ignition">点火系統・失火</string>
+    <string name="dtc_sub_emissions">補助排出ガス制御</string>
+    <string name="dtc_sub_speed_idle">車速・アイドル制御</string>
+    <string name="dtc_sub_computer">コンピューター出力回路</string>
+    <string name="dtc_sub_transmission">変速機</string>
+    <string name="dtc_sub_hybrid">ハイブリッド駆動系</string>
+
+    <!-- Diagnostic codes screen -->
+    <string name="title_dtc">故障コード</string>
+    <string name="dtc_read">故障コード読み取り</string>
+    <string name="dtc_clear">故障コード消去</string>
+    <string name="dtc_clear_title">故障コードを消去しますか？</string>
+    <string name="dtc_clear_message">記憶された故障コードとフリーズフレームを消去し、レディネスモニターをリセットします。元に戻すことはできません。原因が解消していない場合、故障コードは再度記憶されます。</string>
+    <string name="dtc_cleared">故障コードを消去しました</string>
+    <string name="dtc_none">故障コードはありません</string>
+    <string name="dtc_count_format">%1$d 件の故障コード</string>
+    <string name="dtc_freeze_frame">フリーズフレーム</string>
+    <string name="dtc_freeze_frame_none">このコードのフリーズフレームはありません</string>
+    <string name="dtc_source_dictionary">コード辞書より</string>
+    <string name="dtc_source_decoder">コード構造から解析</string>
+    <string name="dtc_reading">故障コードを読み取り中…</string>
+
+    <!-- Connection -->
+    <string name="connect_failed_format">接続に失敗しました: %1$s</string>
+    <string name="connecting_to_format">%1$s に接続中…</string>
+    <string name="read_failed_format">読み取りに失敗しました: %1$s</string>
+    <string name="protocol_format">プロトコル: %1$s</string>
+    <string name="bluetooth_disabled">Bluetooth をオンにしてアダプターを検索してください</string>
+    <string name="bluetooth_permission_needed">アダプターの検索には Bluetooth の権限が必要です</string>
+    <string name="bluetooth_unsupported">この端末は Bluetooth に対応していません</string>
+    <string name="no_paired_devices">ペアリング済みのアダプターがありません。Android の設定でペアリングしてから再検索してください。</string>
+    <string name="paired_devices">ペアリング済みアダプター</string>
+    <string name="demo_mode_banner">デモモードです。データはシミュレーションです。</string>
+    <string name="action_grant">許可</string>
+    <string name="action_retry">再試行</string>
+
+    <!-- Settings -->
+    <string name="title_settings">設定</string>
+    <string name="settings_language">言語</string>
+    <string name="settings_language_system">端末の設定に従う</string>
+    <string name="settings_demo_mode">デモモード</string>
+    <string name="settings_demo_mode_desc">実機の代わりにシミュレーションデータを使用します</string>
+    <string name="settings_connection">接続</string>
+    <string name="settings_adapter">アダプター</string>
+    <string name="settings_protocol">プロトコル</string>
+    <string name="settings_dictionary">故障コード辞書</string>
+    <string name="settings_dictionary_format">%1$d 件を収録</string>
+    <string name="settings_about">アプリ情報</string>
+    <string name="settings_version">バージョン</string>
+    <!-- Detail row labels -->
+    <string name="label_system">システム</string>
+    <string name="label_type">種別</string>
+    <string name="label_status">状態</string>
+    <string name="label_subsystem">サブシステム</string>
+
+    <!-- Live parameter names -->
+    <string name="pid_intake_temp">吸気温</string>
+    <string name="pid_engine_load">エンジン負荷</string>
+    <string name="pid_throttle">スロットル開度</string>
+    <string name="pid_fuel_level">燃料残量</string>
+    <string name="pid_timing">点火時期</string>
+    <string name="pid_stft">短期燃料補正 B1</string>
+    <string name="pid_ltft">長期燃料補正 B1</string>
+    <!-- Readiness monitors and lamp state -->
+    <string name="readiness">レディネスモニター</string>
+    <string name="mil_on">チェックランプ点灯</string>
+    <string name="mil_off">チェックランプ消灯</string>
+    <string name="monitors_format">モニター %2$d 項目中 %1$d 項目完了</string>
+    <string name="monitor_ready">完了</string>
+    <string name="monitor_not_ready">未完了</string>
+    <string name="health_note">ランプ状態と故障コード数から算出</string>
+    <string name="monitor_misfire">失火</string>
+    <string name="monitor_fuel_system">燃料システム</string>
+    <string name="monitor_components">コンポーネント</string>
+    <string name="monitor_catalyst">触媒</string>
+    <string name="monitor_heated_catalyst">加熱触媒</string>
+    <string name="monitor_evap">蒸発ガス</string>
+    <string name="monitor_secondary_air">二次エア</string>
+    <string name="monitor_ac">エアコン冷媒</string>
+    <string name="monitor_o2">O2センサー</string>
+    <string name="monitor_o2_heater">O2ヒーター</string>
+    <string name="monitor_egr">EGR</string>
 </resources>

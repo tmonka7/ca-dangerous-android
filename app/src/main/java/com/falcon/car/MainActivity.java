@@ -7,8 +7,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import com.falcon.car.ui.DtcListFragment;
 import com.falcon.car.ui.HomeFragment;
 import com.falcon.car.ui.PlaceholderFragment;
+import com.falcon.car.ui.SettingsFragment;
 import com.falcon.car.ui.VehicleSelectionFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -47,8 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Fragment createTabFragment(int itemId) {
         if (itemId == R.id.nav_diagnose) {
-            return PlaceholderFragment.create(R.drawable.ic_diagnose,
-                    R.string.placeholder_diagnose_title, R.string.placeholder_diagnose_desc, 2);
+            return new DtcListFragment();
         }
         if (itemId == R.id.nav_live_data) {
             return PlaceholderFragment.create(R.drawable.ic_live_data,
@@ -58,8 +59,7 @@ public class MainActivity extends AppCompatActivity {
             return new VehicleSelectionFragment();
         }
         if (itemId == R.id.nav_more) {
-            return PlaceholderFragment.create(R.drawable.ic_more,
-                    R.string.placeholder_more_title, R.string.placeholder_more_desc, 3);
+            return new SettingsFragment();
         }
         return new HomeFragment();
     }

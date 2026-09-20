@@ -137,7 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/section_spacing"
             android:layout_marginBottom="10dp"
-            android:text="@string/vehicle_health" />
+            android:text="@string/readiness" />
 
         <GridLayout
             android:id="@+id/systems_grid"
@@ -182,6 +182,13 @@
                 app:trackColor="@color/redline_card_raised"
                 app:trackCornerRadius="3dp"
                 app:trackThickness="6dp" />
+
+            <TextView
+                android:id="@+id/mil_status"
+                style="@style/Text.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"

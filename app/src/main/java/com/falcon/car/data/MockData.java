@@ -1,10 +1,6 @@
 package com.falcon.car.data;
 
-import com.falcon.car.data.model.AdapterProfile;
-import com.falcon.car.data.model.DiscoveredDevice;
-import com.falcon.car.data.model.Transport;
 import com.falcon.car.data.model.Vehicle;
-import com.falcon.car.data.model.VehicleSystem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,9 +9,14 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Stand-in data for the phase 1 shell. Every screen reads through here, so the
- * real sources (adapter discovery, vehicle database, scan results) can replace
- * these methods one at a time without touching the UI.
+ * The vehicle catalogue the selection screen drills through, plus the recent
+ * vehicles list.
+ *
+ * <p>Telemetry, trouble codes and readiness no longer live here - those come
+ * from the adapter through {@code ObdManager}, with demo mode served by
+ * {@code DemoObdConnection} so the simulation sits behind the same protocol
+ * rather than beside it. What remains is reference data that a vehicle
+ * database will replace.
  */
 public final class MockData {
 
@@ -35,89 +36,6 @@ public final class MockData {
         vehicles.add(new Vehicle("Nissan", "Note", 2019, "1.2L",
                 "SJNFAAE12U1234567", "Sep 12"));
         return vehicles;
-    }
-
-    /** Last scan result for the current vehicle: 82% health, three issues. */
-    public static List<VehicleSystem> systems() {
-        List<VehicleSystem> systems = new ArrayList<>();
-        systems.add(new VehicleSystem(VehicleSystem.Id.ENGINE, VehicleSystem.Status.GOOD, 0));
-        systems.add(new VehicleSystem(VehicleSystem.Id.TRANSMISSION, VehicleSystem.Status.GOOD, 0));
-        systems.add(new VehicleSystem(VehicleSystem.Id.ABS, VehicleSystem.Status.GOOD, 0));
-        systems.add(new VehicleSystem(VehicleSystem.Id.SRS, VehicleSystem.Status.FAULT, 1));
-        systems.add(new VehicleSystem(VehicleSystem.Id.BODY, VehicleSystem.Status.WARNING, 2));
-        systems.add(new VehicleSystem(VehicleSystem.Id.TPMS, VehicleSystem.Status.GOOD, 0));
-        return systems;
-    }
-
-    public static int healthScore() {
-        return 82;
-    }
-
-    public static int dtcCount() {
-        int total = 0;
-        for (VehicleSystem system : systems()) {
-            total += system.getIssueCount();
-        }
-        return total;
-    }
-
-    public static float batteryVoltage() {
-        return 13.8f;
-    }
-
-    public static int coolantTemp() {
-        return 91;
-    }
-
-    public static int engineRpm() {
-        return 0;
-    }
-
-    /**
-     * Devices a scan would surface. Each is tied to a catalogue profile so the
-     * row can show real transport and protocol coverage rather than a guess.
-     */
-    public static List<DiscoveredDevice> discoveredDevices() {
-        List<DiscoveredDevice> devices = new ArrayList<>();
-        devices.add(device("OBDLink MX+", "OBDLink", Transport.BLUETOOTH_CLASSIC, 4,
-                DiscoveredDevice.State.CONNECTED));
-        devices.add(device("Veepeak OBDCheck BLE+", "Veepeak", Transport.BLUETOOTH_LE, 3,
-                DiscoveredDevice.State.AVAILABLE));
-        devices.add(device("vLinker MC+", "Vgate", Transport.BLUETOOTH_LE, 3,
-                DiscoveredDevice.State.AVAILABLE));
-        devices.add(device("MaxiAP AP200", "Autel", Transport.BLUETOOTH_CLASSIC, 2,
-                DiscoveredDevice.State.AVAILABLE));
-        devices.add(device("X-431 VCI", "LAUNCH", Transport.WIFI, 4,
-                DiscoveredDevice.State.AVAILABLE));
-        devices.add(device("TOPDON VCI", "TOPDON", Transport.BLUETOOTH_CLASSIC, 2,
-                DiscoveredDevice.State.AVAILABLE));
-        devices.add(device("THINKDIAG 2", "THINKCAR", Transport.BLUETOOTH_CLASSIC, 1,
-                DiscoveredDevice.State.AVAILABLE));
-        devices.add(device("ANCEL BD500", "ANCEL", Transport.BLUETOOTH_CLASSIC, 2,
-                DiscoveredDevice.State.AVAILABLE));
-        devices.add(device("ELM327 v1.5", "ELM327", Transport.WIFI, 3,
-                DiscoveredDevice.State.AVAILABLE));
-        devices.add(device("J2534 Pass-Thru", "J2534", Transport.USB_OTG, 4,
-                DiscoveredDevice.State.AVAILABLE));
-        return devices;
-    }
-
-    private static DiscoveredDevice device(String name, String brand, Transport transport,
-                                           int signal, DiscoveredDevice.State state) {
-        AdapterProfile profile = AdapterCatalog.byBrand(brand);
-        return new DiscoveredDevice(name, profile, transport, signal, state);
-    }
-
-    /** Devices reachable over the given transport. */
-    public static List<DiscoveredDevice> devicesOn(Transport transport) {
-        List<DiscoveredDevice> result = new ArrayList<>();
-        for (DiscoveredDevice device : discoveredDevices()) {
-            if (device.getProfile() != null
-                    && device.getProfile().getTransports().contains(transport)) {
-                result.add(device);
-            }
-        }
-        return result;
     }
 
     public static Map<String, List<String>> modelsByMake() {

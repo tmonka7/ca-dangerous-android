@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_margin">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/include_screen_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/detail_code"
+                style="@style/Text.Display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.06"
+                android:textColor="@color/redline_red" />
+
+            <TextView
+                android:id="@+id/detail_description"
+                style="@style/Text.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/detail_source"
+                style="@style/Text.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" />
+
+            <LinearLayout
+                style="@style/Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/row_system"
+                    layout="@layout/item_detail_row" />
+
+                <include
+                    android:id="@+id/row_kind"
+                    layout="@layout/item_detail_row" />
+
+                <include
+                    android:id="@+id/row_status"
+                    layout="@layout/item_detail_row" />
+
+                <include
+                    android:id="@+id/row_subsystem"
+                    layout="@layout/item_detail_row" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Text.SectionHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:layout_marginBottom="10dp"
+                android:text="@string/dtc_freeze_frame" />
+
+            <LinearLayout
+                android:id="@+id/freeze_frame_card"
+                style="@style/Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/freeze_frame_empty"
+                style="@style/Text.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/dtc_freeze_frame_none" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

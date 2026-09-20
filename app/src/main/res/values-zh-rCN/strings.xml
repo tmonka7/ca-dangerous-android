@@ -134,4 +134,100 @@
     <string name="cd_back">返回</string>
     <string name="cd_vehicle">车辆</string>
     <string name="cd_signal_strength">信号强度</string>
+    <!-- Trouble code status -->
+    <string name="dtc_status_stored">已存储</string>
+    <string name="dtc_status_pending">未决</string>
+    <string name="dtc_status_permanent">永久</string>
+
+    <!-- Trouble code structure -->
+    <string name="dtc_system_powertrain">动力系统</string>
+    <string name="dtc_system_chassis">底盘</string>
+    <string name="dtc_system_body">车身</string>
+    <string name="dtc_system_network">网络</string>
+    <string name="dtc_kind_generic">通用码 (SAE)</string>
+    <string name="dtc_kind_manufacturer">厂家自定义码</string>
+    <string name="dtc_sub_fuel_air">燃油与空气计量</string>
+    <string name="dtc_sub_injector">喷油器电路</string>
+    <string name="dtc_sub_ignition">点火系统或失火</string>
+    <string name="dtc_sub_emissions">辅助排放控制</string>
+    <string name="dtc_sub_speed_idle">车速与怠速控制</string>
+    <string name="dtc_sub_computer">计算机输出电路</string>
+    <string name="dtc_sub_transmission">变速器</string>
+    <string name="dtc_sub_hybrid">混合动力驱动</string>
+
+    <!-- Diagnostic codes screen -->
+    <string name="title_dtc">故障码</string>
+    <string name="dtc_read">读取故障码</string>
+    <string name="dtc_clear">清除所有故障码</string>
+    <string name="dtc_clear_title">确定清除所有故障码？</string>
+    <string name="dtc_clear_message">将清除已存储的故障码与冻结帧数据，并复位就绪监测器。此操作无法撤销，若故障仍然存在，故障码会再次出现。</string>
+    <string name="dtc_cleared">故障码已清除</string>
+    <string name="dtc_none">无故障码</string>
+    <string name="dtc_count_format">%1$d 个故障码</string>
+    <string name="dtc_freeze_frame">冻结帧</string>
+    <string name="dtc_freeze_frame_none">该故障码没有冻结帧数据</string>
+    <string name="dtc_source_dictionary">来自故障码字典</string>
+    <string name="dtc_source_decoder">依据故障码结构解析</string>
+    <string name="dtc_reading">正在读取故障码…</string>
+
+    <!-- Connection -->
+    <string name="connect_failed_format">连接失败：%1$s</string>
+    <string name="connecting_to_format">正在连接 %1$s…</string>
+    <string name="read_failed_format">读取失败：%1$s</string>
+    <string name="protocol_format">协议：%1$s</string>
+    <string name="bluetooth_disabled">请开启蓝牙以搜索适配器</string>
+    <string name="bluetooth_permission_needed">搜索适配器需要蓝牙权限</string>
+    <string name="bluetooth_unsupported">此设备不支持蓝牙</string>
+    <string name="no_paired_devices">尚未配对任何适配器。请先在系统设置中配对，然后重新搜索。</string>
+    <string name="paired_devices">已配对的适配器</string>
+    <string name="demo_mode_banner">演示模式已开启，数据为模拟数据。</string>
+    <string name="action_grant">授权</string>
+    <string name="action_retry">重试</string>
+
+    <!-- Settings -->
+    <string name="title_settings">设置</string>
+    <string name="settings_language">语言</string>
+    <string name="settings_language_system">跟随系统</string>
+    <string name="settings_demo_mode">演示模式</string>
+    <string name="settings_demo_mode_desc">使用模拟数据代替真实适配器</string>
+    <string name="settings_connection">连接</string>
+    <string name="settings_adapter">适配器</string>
+    <string name="settings_protocol">协议</string>
+    <string name="settings_dictionary">故障码字典</string>
+    <string name="settings_dictionary_format">已收录 %1$d 条</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_version">版本</string>
+    <!-- Detail row labels -->
+    <string name="label_system">系统</string>
+    <string name="label_type">类型</string>
+    <string name="label_status">状态</string>
+    <string name="label_subsystem">子系统</string>
+
+    <!-- Live parameter names -->
+    <string name="pid_intake_temp">进气温度</string>
+    <string name="pid_engine_load">发动机负荷</string>
+    <string name="pid_throttle">节气门开度</string>
+    <string name="pid_fuel_level">燃油液位</string>
+    <string name="pid_timing">点火提前角</string>
+    <string name="pid_stft">短期燃油修正 B1</string>
+    <string name="pid_ltft">长期燃油修正 B1</string>
+    <!-- Readiness monitors and lamp state -->
+    <string name="readiness">就绪监测器</string>
+    <string name="mil_on">发动机故障灯亮</string>
+    <string name="mil_off">发动机故障灯灭</string>
+    <string name="monitors_format">监测器已就绪 %1$d / %2$d</string>
+    <string name="monitor_ready">已就绪</string>
+    <string name="monitor_not_ready">未就绪</string>
+    <string name="health_note">依据故障灯状态与故障码数量汇总</string>
+    <string name="monitor_misfire">失火</string>
+    <string name="monitor_fuel_system">燃油系统</string>
+    <string name="monitor_components">综合部件</string>
+    <string name="monitor_catalyst">催化器</string>
+    <string name="monitor_heated_catalyst">加热催化器</string>
+    <string name="monitor_evap">蒸发排放</string>
+    <string name="monitor_secondary_air">二次空气</string>
+    <string name="monitor_ac">空调制冷剂</string>
+    <string name="monitor_o2">氧传感器</string>
+    <string name="monitor_o2_heater">氧传感器加热</string>
+    <string name="monitor_egr">废气再循环</string>
 </resources>

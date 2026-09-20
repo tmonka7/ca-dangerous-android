@@ -8,6 +8,7 @@ import com.falcon.car.data.model.Transport;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Locale;
 import java.util.List;
 
 /**
@@ -160,5 +161,31 @@ public final class AdapterCatalog {
             }
         }
         return null;
+    }
+
+    /**
+     * Best guess at the family behind a Bluetooth device name. Adapters
+     * advertise names like "OBDII", "vLinker MC+" or "OBDLink MX+", so the
+     * match is on the brand or a distinctive model string, and anything
+     * unrecognised falls back to the generic ELM327 profile.
+     */
+    public static AdapterProfile matchByName(String deviceName) {
+        if (deviceName == null || deviceName.isEmpty()) {
+            return byBrand("ELM327");
+        }
+        String name = deviceName.toUpperCase(Locale.US);
+
+        for (AdapterProfile profile : all()) {
+            if (name.contains(profile.getBrand().toUpperCase(Locale.US))) {
+                return profile;
+            }
+            for (String model : profile.getModels()) {
+                String token = model.toUpperCase(Locale.US);
+                if (token.length() >= 4 && name.contains(token)) {
+                    return profile;
+                }
+            }
+        }
+        return byBrand("ELM327");
     }
 }
